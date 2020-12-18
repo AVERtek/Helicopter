@@ -39,7 +39,7 @@
   const modelViewer = document.querySelector('#paused-change-demo');
 
   self.setInterval(() => {
-    modelViewer.animationName = modelViewer.animationName === 'rotor|object.029Action.001' ?
+    modelViewer.animationName = modelViewer.animationName === 'rotor|object.029Action.001'?
       'Right_door|object.009Action.001': 'rotor|object.029Action.001';
   }, 500.0);
 })();
