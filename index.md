@@ -34,7 +34,16 @@
       👋 AR Click Here
   </button> 
 </model-viewer>
+<script>
+(() => {
+  const modelViewer = document.querySelector('#paused-change-demo');
 
+  self.setInterval(() => {
+    modelViewer.animationName = modelViewer.animationName === 'rotor|object.029Action.001' ?
+      'Right_door|object.009Action.001': 'rotor|object.029Action.001';
+  }, 500.0);
+})();
+</script>
 <!-- Loads <model-viewer> for modern browsers: -->
  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
   </script>
